@@ -19,4 +19,4 @@ prime n | n < 1     = error "not a positive integer"
         | otherwise = ld n == n
 
 
-sum [ x | x <- [1..2000000], prime0 x == True]
+sum [ x | x <- [1..2000000], prime x == True]
