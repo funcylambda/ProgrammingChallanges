@@ -15,8 +15,8 @@ ldf k n | divides k n = k
 
 prime :: Integer -> Bool
 prime n | n < 1     = error "not a positive integer"
-         | n == 1    = False
-         | otherwise = ld n == n
+        | n == 1    = False
+        | otherwise = ld n == n
 
 
 sum [ x | x <- [1..2000000], prime0 x == True]
